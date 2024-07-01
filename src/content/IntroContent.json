@@ -1,0 +1,14 @@
+{
+  "title": "Make personal finance simple",
+  "text": "Care-free expense management with FinGenie. Powerful and easy to use.",
+  "button": [
+    {
+      "title": "Join waitlist"
+    },
+    {
+      "title": "Join waitlist",
+      "content": "test",
+      "color": "grey"
+    }
+  ]
+}
