@@ -3,12 +3,14 @@
   "text": "Care-free expense management with FinGenie. Powerful and easy to use.",
   "button": [
     {
-      "title": "Join waitlist"
+      "title": "Join waitlist",
+      "url": "https://forms.gle/LnAunfDeiPyFJpwz6"
     },
     {
-      "title": "Join waitlist",
+      "title": "Try Demo (coming soon)",
       "content": "test",
-      "color": "grey"
+      "color": "grey",
+      "url": "https://www.loom.com/share/ee8f2f4b900e4d688b1f5b158d1ad018?sid=fa3d3dbb-47cf-4c2b-88a5-62e287cb29e5"
     }
   ]
 }

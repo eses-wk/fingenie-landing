@@ -26,6 +26,10 @@ const ContentBlock = ({
   id,
   direction,
 }: ContentBlockProps) => {
+  const redirectTo = (url: string) => {
+    // window.location.href = url;
+    window.open(url, '_blank', 'noopener,noreferrer')
+  };
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -57,6 +61,7 @@ const ContentBlock = ({
                         item: {
                           color?: string;
                           title: string;
+                          url?: string;
                         },
                         id: number
                       ) => {
@@ -64,7 +69,7 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("about")}
+                            onClick={() => item.url? redirectTo(item.url): scrollTo('contact')}
                           >
                             {t(item.title)}
                           </Button>
