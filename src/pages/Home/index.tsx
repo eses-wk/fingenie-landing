@@ -8,7 +8,9 @@ import ContactContent from "../../content/ContactContent.json";
 import DemoContent1 from "../../content/Demo1.json";
 import DemoContent2 from "../../content/Demo2.json";
 import DemoContent3 from "../../content/Demo3.json";
-
+import DemoTitle from "../../content/DemoTitle.json";
+import { Row, Col } from "antd";
+import styled from "styled-components";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -16,6 +18,8 @@ const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const DemoBlock = lazy(() => import("../../components/DemoBlock"));
+const MiddleTitle = lazy(() => import("../../components/MiddleTitle"));
+
 
 const Home = () => {
   return (
@@ -40,6 +44,18 @@ const Home = () => {
         img5={MiddleBlockContent.img5}
         // button={MiddleBlockContent.button}
       />
+      {/* <Col lg={11} md={11} sm={12} xs={13}>
+        <ContentWrapper>
+              <h6>{'What if there is a better way!'}</h6>
+             
+        </ContentWrapper>
+      </Col> */}
+      <MiddleTitle
+        title={DemoTitle.title}
+        // button={MiddleBlockContent.button}
+      />
+
+
       <DemoBlock
         direction="left"
         title={DemoContent1.title}
@@ -64,7 +80,9 @@ const Home = () => {
         icon={DemoContent3.icon}
         id="demo3"
       />
-      <ContentBlock
+      
+
+      {/* <ContentBlock
         direction="right"
         title={AboutContent.title}
         content={AboutContent.text}
@@ -79,7 +97,7 @@ const Home = () => {
         section={AboutContent.section}
         icon="graphs.svg"
         id="about"
-      />
+      /> */}
       <ContentBlock
         direction="right"
         title={MissionContent.title}

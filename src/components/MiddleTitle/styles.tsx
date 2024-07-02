@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const MiddleBlockSection = styled("section")`
   position: relative;
-  padding: 7.5rem 0 3rem;
+  padding: 7.5rem 0 0rem;
   text-align: center;
-  // display: flex;
+  display: flex;
   justify-content: center;
 
   @media screen and (max-width: 1024px) {
-    padding: 5rem 0 2rem;
+    padding: 5rem 0 0rem;
   }
 `;
 
