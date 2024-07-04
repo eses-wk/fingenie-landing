@@ -5,7 +5,8 @@ import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
 import PngImg from "../../common/PngImg";
 import ImageBlock from '../../common/ImageBlock';
-
+import React from 'react';
+import ReactPlayer from 'react-player/lazy';
 
 interface MiddleBlockProps {
   title: string;
@@ -28,6 +29,7 @@ const MiddleTitle = ({ title, content, t }: MiddleBlockProps) => {
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6>{t(title)}</h6>
               {content && <Content>{t(content)}</Content>}
+              <ReactPlayer url='https://youtu.be/KKtmzRJ44rE' controls={true} width="100%"/>
               {/* {button && (
                 <Button name="submit" onClick={() => scrollTo("mission")}>
                   {t(button)}

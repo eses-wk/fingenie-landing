@@ -102,17 +102,18 @@ const Home = () => {
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
+        button={MissionContent.button}
         icon="product-launch.svg"
         id="mission"
       />
-      <ContentBlock
+      {/* <ContentBlock
         direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
         button={ProductContent.button}
         icon="waving.svg"
         id="product"
-      />
+      /> */}
        {/*
       <Contact
         title={ContactContent.title}
